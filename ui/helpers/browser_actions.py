@@ -10,11 +10,9 @@ from Utils import config_helper
 class BrowserActions:
 
     def initialize_driver(self):
-        # Use the absolute path to the CSV file
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_path = os.path.join(base_dir, '../test_cases/config.csv')
 
-        # Read the browser type from the config file
         config_helper_instance = config_helper.ConfigHelper(config_path)
         browser_type = config_helper_instance.get_browser()
 

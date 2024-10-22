@@ -9,11 +9,9 @@ class TestLogin(unittest.TestCase):
     def setUp(self):
         browser_actions_instance = browser_actions.BrowserActions()
         self.driver = browser_actions_instance.initialize_driver()
-        # Use the absolute path to the CSV file
         base_dir = os.path.dirname(os.path.abspath(__file__))
         csv_path = os.path.join(base_dir, 'testdata.csv')
 
-        # Create an instance of CSVHelper and read the test data
         csv_helper_instance = csv_helper.CSVHelper()
         self.test_data = csv_helper_instance.read_csv(csv_path)
 

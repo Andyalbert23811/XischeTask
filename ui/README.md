@@ -25,7 +25,6 @@ The project is organized as follows:
 - `helpers/`: Contains helper modules.
   - `browser_actions.py`: Helper module for browser actions
   - `driver_actions.py`: Helper module for WebDriver initialization.
-
 - `requirements.txt`: Lists the dependencies required for the project.
 - `Dockerfile`: Defines the Docker image for the project.
 - `docker-compose.yml`: Defines the Docker services for the project.
@@ -45,5 +44,11 @@ The project is organized as follows:
 
 3. **Install the dependencies**:
     pip install -r requirements.txt
-
+4. **Run the test**:
+    python test_cases/test_driven_data.py
+5. **Using Docker**:  
+Build the Docker image:  
+docker build -t linkedin-login-test .
+Run the Docker container:  
+docker run --rm -v $(pwd):/app linkedin-login-test
 

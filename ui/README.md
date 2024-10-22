@@ -46,13 +46,4 @@ The project is organized as follows:
 3. **Install the dependencies**:
     pip install -r requirements.txt
 
-## Usage
-
-1. **Configure the browser type**:
-    - Edit the `config.csv` file located in the `test_cases` directory to specify the browser type (e.g., chrome, firefox, edge, safari).
-
-2. **Run the script**:
-    python path/to/your_script.py
-
-
 
